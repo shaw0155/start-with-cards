@@ -1,0 +1,83 @@
+.services {
+  height: auto;
+  flex-direction: column;
+  gap: 12rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7rem;
+}
+
+.card {
+  z-index: 0 !important;
+  transition: all 0.5s;
+  box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.151);
+}
+
+.ant-card {
+  width: 35rem;
+}
+.card:hover {
+  transform: translateY(-4rem);
+}
+
+.ant-card-cover {
+  height: 30rem;
+}
+
+.ant-card-cover img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.ant-card-body {
+  height: 18rem;
+}
+/******************************************/
+@media screen and (max-width: 1250px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .ant-card {
+    width: 25rem;
+  }
+  .card:hover {
+    transform: translateY(-4rem);
+  }
+
+  .ant-card-cover {
+    height: 20rem;
+  }
+
+  .ant-card-body {
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ant-card {
+    width: 30rem;
+  }
+
+  .ant-card-cover {
+    height: 30rem;
+  }
+
+  .ant-card-body {
+    height: 18rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .services-header {
+    font-size: 4.6rem;
+  }
+}
